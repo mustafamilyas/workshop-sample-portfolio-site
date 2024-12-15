@@ -12,6 +12,9 @@
         padding: 20px;
         line-height: 1.6;
         color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
       .profile {
         display: flex;
@@ -35,6 +38,13 @@
         border-bottom: 2px solid #3498db;
         padding-bottom: 10px;
       }
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: auto;
+      }
     </style>
   </head>
   <body>
@@ -42,22 +52,24 @@
       <h1>Jane Doe</h1>
     </header>
 
-    <div class="profile">
-      <img
-        src="https://picsum.photos/id/64/600/600"
-        alt="Profile Photo"
-        class="profile-photo"
-      />
-      <div>
-        <h2>About Me</h2>
-        <p>
-          Hello! I'm a passionate web developer with a love for creating
-          beautiful and functional digital experiences. I specialize in
-          front-end development and enjoy turning complex problems into simple,
-          intuitive designs.
-        </p>
+    <main>
+      <div class="profile">
+        <img
+          src="https://picsum.photos/id/64/600/600"
+          alt="Profile Photo"
+          class="profile-photo"
+        />
+        <div>
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm a passionate web developer with a love for creating
+            beautiful and functional digital experiences. I specialize in
+            front-end development and enjoy turning complex problems into
+            simple, intuitive designs.
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
 
     <div class="contact-info">
       <h2>Contact Information</h2>
@@ -66,5 +78,10 @@
       <p>🌐 LinkedIn: /in/janedoe</p>
       <p>🐱 GitHub: @janedoe</p>
     </div>
+
+    <footer>
+      <p>&copy; 2024 Jane Doe. All Rights Reserved.</p>
+      <p>Designed and Built with ❤️ by Jane Doe</p>
+    </footer>
   </body>
 </html>
